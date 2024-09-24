@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Regal Tailor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="js/theme.js" defer></script>
+    <script type="text/javascript" src="js/sectionAnimations.js" defer></script>
+    <script type="text/javascript" src="js/reviews.js" defer></script>
+    <script type="text/javascript" src="js/mobileMenu.js" defer></script>
+    <script type="text/javascript" src="js/cart.js" defer></script>
+</head>
+<body class="dark-theme">
+    <header>
+        <div class="container">
+            <h1 class="logo">Regal Tailor</h1> <!-- Nome da loja -->
+            <nav class="nav hidden" id="nav-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icons">
+                <button class="icon-btn" aria-label="Account">
+                    <img src="images/account.png" alt="Account" />
+                </button>
+                <button class="icon-btn" aria-label="Shop" id="shop">
+                    <img src="images/shop.png" alt="Shop" />
+                </button>
+                <button class="theme-toggle" id="theme-toggle">Light Mode</button> <!-- Botão de alternar tema -->
+                <button id="menu-toggle" class="menu-btn">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="cart" id="cart">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>YOUR CART</h2>    
+                <button class="close-cart" id="close-cart">X</button>
+            </div>
+            <ul>
+                <li>Gray Pinstripe Suit</li>
+                <li>Classic Grey Tuxedo</li>
+                <li>Black Suit</li>
+            </ul>
+            <p>Total:</p>
+            <button class="btn">CHECKOUT</button>
+        </div>
+    </section>
+
+
+    <section id="hero" class="hero animation">
+        <div class="overlay"></div> <!-- Esta div cria a camada de transparência escura -->
+        <div class="hero-content">
+            <h2 class="section-title">Timeless Elegance</h2>
+            <p>Discover our exclusive collection of luxury suits tailored to perfection.</p>
+            <button class="btn">Shop Now</button>
+        </div>
+    </section>
+
+
+    <section id="about" class="about animation">
+        <div class="about-content">
+            <h2 class="section-title">About Regal Tailor</h2>
+            <p>At Regal Tailor, we believe that a suit is not just clothing; it is an expression of style, confidence, and elegance. Our bespoke tailoring service combines traditional craftsmanship with modern designs, ensuring that every piece is unique and tailored to perfection. Whether you're dressing for a business meeting, a wedding, or a special occasion, our collection offers a range of luxurious fabrics and styles that cater to your individual taste.</p>
+            <p>With years of experience in the tailoring industry, our skilled artisans take pride in their attention to detail, delivering exceptional quality and fit. Discover the elegance of fine tailoring with Regal Tailor, where your style meets our craftsmanship.</p>
+        </div>
+    </section>
+
+
+    <section id="collection" class="collection animation">
+        <h2 class="section-title">Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-item" style="background-image: url('images/black-suit.jpg');">
+                <div class="overlay"></div>
+                <div class="product-info">
+                    <h3>Classic Black Suit</h3>
+                    <p>From $799</p>
+                    <button class="view-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="product-item" style="background-image: url('images/blue-suit.jpg');">
+                <div class="overlay"></div>
+                <div class="product-info">
+                    <h3>Navy Blue Suit</h3>
+                    <p>From $899</p>
+                    <button class="view-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="product-item" style="background-image: url('images/gray-suit.jpg');">
+                <div class="overlay"></div>
+                <div class="product-info">
+                    <h3>Gray Pinstripe Suit</h3>
+                    <p>From $849</p>
+                    <button class="view-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="product-item" style="background-image: url('images/executive-black-suit.jpg');">
+                <div class="overlay"></div>
+                <div class="product-info">
+                    <h3>Executive Black Suit</h3>
+                    <p>From $799</p>
+                    <button class="view-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="product-item" style="background-image: url('images/slim-suit.jpg');">
+                <div class="overlay"></div>
+                <div class="product-info">
+                    <h3>Slim Fit Navy Suit</h3>
+                    <p>From $699</p>
+                    <button class="view-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="product-item" style="background-image: url('images/gray-tuxedo-suit.jpg');">
+                <div class="overlay"></div>
+                <div class="product-info">
+                    <h3>Classic Grey Tuxedo</h3>
+                    <p>From $899</p>
+                    <button class="view-more-btn">See more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reviews animation" id="reviews">
+        <h2 class="section-title">User Reviews</h2>
+        <div class="review-container" data-aos="fade-up">
+            <div class="review">
+                <img src="images/John.jpg" alt="User 1" class="user-photo" />
+                <h3>John Smith</h3>
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>Regal Tailor exceeded all of my expectations! The suit I purchased is of exceptional quality and fits perfectly. I will definitely be back for more purchases!</p>
+            </div>
+            <div class="review">
+                <img src="images/Sarah.jpg" alt="User 2" class="user-photo" />
+                <h3>Sarah Johnson</h3>
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>I was delighted with the service and attention to detail. The design of the suits is elegant and modern. I received so many compliments on my last special occasion!</p>
+            </div>
+            <div class="review">
+                <img src="images/Michael.jpg" alt="User 3" class="user-photo" />
+                <h3>Michael Brown</h3>
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>The best online shopping experience I've ever had! The website is easy to navigate, and delivery was quick. The suit is incredibly comfortable and the materials are of high quality.</p>
+            </div>
+            <!-- Adicione mais avaliações aqui -->
+        </div>
+        <div class="navigation">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact animation">
+        <div class="contact-content">
+            <h2 class="section-title">Contact Us</h2>
+            <p>We would love to hear from you! Whether you have questions about our products, need assistance, or want to share your feedback, feel free to reach out using the form below.</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="newsletter" class="newsletter animation">
+        <div class="newsletter-content">
+            <h2 class="section-title">Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest trends in fashion and exclusive offers from Regal Tailor. Subscribe to our newsletter and be the first to know about our new collections and promotions.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright &copy; 2024 | Designed and Developed by <a href="https://www.israelpedo.com" target="_blank">Israel Pedó de Camargo</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/israelpedo" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.github.com/israelpedo" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/israelpedo" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
