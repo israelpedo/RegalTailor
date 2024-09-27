@@ -1,3 +1,5 @@
+# Regal Tailor
+
 The Regal Tailor project is a website for a designer suit shop. It was developed with the aim of creating a sophisticated and modern browsing experience, combining interactive features with an elegant design. I used HTML, CSS and JavaScript to structure, stylise and add dynamism to the site.
 
 Technologies used:
